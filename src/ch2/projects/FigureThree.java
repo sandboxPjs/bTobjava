@@ -2,18 +2,13 @@ package ch2.projects;
 
 public class FigureThree {
     public static void main(String[] args) {
-        // print line
         printLine();
-        // print top
         printTop();
-        // print bottom
         printBottom();
-        // print line
         printLine();
-        // print bottom
         printBottom();
-        // print top
         printTop();
+        printLine();
     }
 
     public static void printLine() {
@@ -25,9 +20,43 @@ public class FigureThree {
         System.out.println();
     }
     public static void printTop() {
-
+        for (int i = 1; i <= 4; i++) {
+            System.out.print("|");
+            for (int j = 0; j < -1 * i + 5; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i - 1; j++) {
+                System.out.print("/");
+            }
+            System.out.print("*");
+            for (int j = 0; j < i - 1; j++) {
+                System.out.print("\\");
+            }
+            for (int j = 0; j < -1 * i + 5; j++) {
+                System.out.print(" ");
+            }
+            System.out.print("|");
+            System.out.println();
+        }
     }
     public static void printBottom() {
-
+        for (int i = 1; i <= 4; i++) {
+            System.out.print("|");
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < -1 * i + 4; j++) {
+                System.out.print("\\");
+            }
+            System.out.print("*");
+            for (int j = 0; j < -1 * i + 4; j++) {
+                System.out.print("/");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            System.out.print("|");
+            System.out.println();
+        }
     }
 }

@@ -9,14 +9,14 @@ public class HangmanGame {
 
         Scanner scanner = new Scanner(System.in);
         int counter = 0;
-        char letter = 0;
-        int number = 0;
+        char letter;
+        int number;
 
         do {
             letter = generateLetter();
             makeStep(letter);
-            number = scanner.nextInt();
             counter++;
+            number = scanner.nextInt();
         } while (number != 0);
 
         System.out.printf("Game over! Computer has guessed your word using %d attempts", counter);

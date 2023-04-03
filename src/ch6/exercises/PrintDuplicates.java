@@ -26,7 +26,9 @@ public class PrintDuplicates {
                         System.out.print(prev);
                         System.out.print("*");
                         System.out.print(counter);
-                        System.out.print(" ");
+                        if (l.hasNext()) {
+                            System.out.print(" ");
+                        }
                         counter = 1;
                     }
                     prev = next;
@@ -36,7 +38,6 @@ public class PrintDuplicates {
                 System.out.print(prev);
                 System.out.print("*");
                 System.out.print(counter);
-                System.out.print(" ");
             }
             System.out.println();
         }

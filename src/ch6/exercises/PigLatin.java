@@ -28,7 +28,12 @@ public class PigLatin {
                 } else {
                     token = token.substring(1) + token.charAt(0) + "ay";
                 }
-                System.out.print(token + " ");
+                if (inputLine.hasNext()) {
+                    System.out.print(token + " ");
+                } else {
+                    System.out.print(token);
+                }
+
             }
             System.out.println();
         }

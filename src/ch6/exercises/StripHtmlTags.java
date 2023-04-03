@@ -45,7 +45,10 @@ public class StripHtmlTags {
                 if (token.length() == 0) {
                     System.out.print(token);
                 } else {
-                    System.out.print(token + " ");
+                    System.out.print(token);
+                    if (l.hasNext()) {
+                        System.out.print(" ");
+                    }
                 }
             }
             System.out.println();

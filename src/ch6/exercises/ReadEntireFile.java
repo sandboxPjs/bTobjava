@@ -12,8 +12,11 @@ public class ReadEntireFile {
 
     public static String readEntireFile(Scanner input) {
         String text = "";
+        if (input.hasNextLine()) {
+            text += input.nextLine();
+        }
         while(input.hasNextLine()) {
-            text += input.nextLine() + "\n";
+            text += "\n" + input.nextLine();
         }
 
         return text;

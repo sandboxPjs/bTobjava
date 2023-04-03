@@ -6,11 +6,8 @@ import java.util.Scanner;
 
 public class PlusScores {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input = new Scanner(new File("resources/test.txt"));
+        Scanner input = new Scanner(new File("resources/test12.txt"));
         plusScores(input);
-
-        // read pairs +
-        // handle pluses
     }
 
     public static void plusScores(Scanner input) {

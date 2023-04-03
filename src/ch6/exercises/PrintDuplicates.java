@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class PrintDuplicates {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input = new Scanner(new File("resources/test.txt"));
+        Scanner input = new Scanner(new File("resources/test8.txt"));
         printDuplicates(input);
     }
 

@@ -6,16 +6,8 @@ import java.util.Scanner;
 
 public class EvenNumbers {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input = new Scanner(new File("resources/test.txt"));
+        Scanner input = new Scanner(new File("resources/test2.txt"));
         evenNumbers(input);
-        // make Scanner
-        // read the file
-        // count numbers
-        // calculate sum numbers
-        // count even
-        // calculate sum even numbers
-        // calculate %
-        // print result
     }
 
     public static void evenNumbers(Scanner input) {

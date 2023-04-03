@@ -7,15 +7,12 @@ import java.util.Scanner;
 
 public class LeetSpeak {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input = new Scanner(new File("resources/test.txt"));
+        Scanner input = new Scanner(new File("resources/test13.txt"));
         PrintStream output = new PrintStream(new File("resources/leet.txt"));
         leetSpeak(input, output);
     }
 
     public static void leetSpeak(Scanner input, PrintStream output) {
-        // token style
-        // read token
-        // modify token
         while (input.hasNextLine()) {
             String line = input.nextLine();
             Scanner inputLine = new Scanner(line);

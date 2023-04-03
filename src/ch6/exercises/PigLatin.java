@@ -6,16 +6,10 @@ import java.util.Scanner;
 
 public class PigLatin {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input = new Scanner(new File("resources/test.txt"));
+        Scanner input = new Scanner(new File("resources/test14.txt"));
         pigLatin(input);
     }
     public static void pigLatin(Scanner input) {
-        // token and lines
-        // while there is line
-        // while there is token
-        // to lower case
-        // transform word following Pig Latin rules
-        // print result
         while (input.hasNextLine()) {
             String line = input.nextLine();
             Scanner inputLine = new Scanner(line);

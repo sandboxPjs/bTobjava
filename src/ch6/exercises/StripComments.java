@@ -11,14 +11,6 @@ public class StripComments {
     }
 
     public static void stripComments(Scanner input) {
-        // line style
-        // while there is line
-        // read line
-        // edit line
-            // if there is /* and !*/ skip comment lines and line = ""
-            // if there is // line = line before //
-            // if there is /* and */ line = line before /**/ + line after /**/
-        // print line
         while (input.hasNextLine()) {
             String line = input.nextLine();
             if (line.contains("/*") && !line.contains("*/")) {

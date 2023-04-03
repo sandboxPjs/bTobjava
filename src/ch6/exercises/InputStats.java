@@ -6,12 +6,8 @@ import java.util.Scanner;
 
 public class InputStats {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input = new Scanner(new File("resources/test.txt"));
+        Scanner input = new Scanner(new File("resources/test11.txt"));
         inputStats(input);
-        // make number of lines in the file
-        // make the longest line
-        // make the number of tokens on each line
-        // make the length of the longest token on each line
     }
 
     public static void inputStats(Scanner input) {

@@ -6,11 +6,8 @@ import java.util.Scanner;
 
 public class MostCommonNames {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input = new Scanner(new File("resources/test.txt"));
+        Scanner input = new Scanner(new File("resources/test10.txt"));
         System.out.println(mostCommonNames(input));
-
-        // count un names +
-        // print results after each line +
     }
 
     public static int mostCommonNames(Scanner input) {

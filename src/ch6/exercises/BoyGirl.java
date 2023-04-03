@@ -8,17 +8,9 @@ public class BoyGirl {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner input = new Scanner(new File("resources/test.txt"));
         boyGirl(input);
-        // just read and sum
-        // differ boys and girls
     }
 
     public static void boyGirl(Scanner input) {
-        // token style
-        // while there is a token
-        // read name
-        // read number
-        // calculate sum
-        // print the results
         int sumBoys = 0;
         int sumGirls = 0;
         int counterBoys = 0;

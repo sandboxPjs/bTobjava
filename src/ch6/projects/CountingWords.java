@@ -13,11 +13,6 @@ public class CountingWords {
     }
 
     public static void makeReport(Scanner input, PrintStream output) {
-        // line and token styles
-        // while there is lines
-        // while there is tokens
-        // count chars, tokens, lines
-        // print report
         int charsCounter = 0;
         int tokensCounter = 0;
         int linesCounter = 0;

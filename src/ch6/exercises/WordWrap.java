@@ -6,19 +6,11 @@ import java.util.Scanner;
 
 public class WordWrap {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input = new Scanner(new File("resources/test.txt"));
-        // read and prints lines
-        // divide lines
-        // print parts
+        Scanner input = new Scanner(new File("resources/test7.txt"));
         wordWrap(input);
     }
 
     public static void wordWrap(Scanner input) {
-        // read lines while there is a line
-        // for each line
-        // get a length of the line
-        // divide that line into the parts = 60 chars
-        // print each part of the line
         while (input.hasNextLine()) {
             String line = input.nextLine();
             while (line.length() > 60) {

@@ -11,10 +11,6 @@ public class StripHtmlTags {
     }
 
     public static void stripHtmlTags(Scanner input) {
-        // token + line styles
-        // read line while exists
-        // read token while exists
-
         while (input.hasNextLine()) {
             String line = input.nextLine();
             Scanner l = new Scanner(line);

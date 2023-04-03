@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class CoinFlip {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner input = new Scanner(new File("resources/test.txt"));
+        Scanner input = new Scanner(new File("resources/test9.txt"));
         coinFlip(input);
     }
 

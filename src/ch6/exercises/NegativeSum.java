@@ -6,16 +6,7 @@ import java.util.Scanner;
 
 public class NegativeSum {
     public static void main(String[] args) throws FileNotFoundException {
-        // make scanner
-        // read ints while exists next
-        // for each int
-            // count
-            // add to sum
-            // if sum < 0 print message
-            // and change the flag
-        // check flag and print message
-        // return flag
-        Scanner input = new Scanner(new File("resources/test.txt"));
+        Scanner input = new Scanner(new File("resources/test3.txt"));
         negativeSum(input);
     }
 

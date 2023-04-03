@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class CompareFiles {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner console = new Scanner(System.in);
-        File firstFile = getFile(console, 1);
-        File secondFile = getFile(console, 2);
+        File firstFile = getFile(console, 1); // for test: resources/data1.txt
+        File secondFile = getFile(console, 2); // for test: resources/data2.txt
         PrintStream output = new PrintStream(new File("resources/difference report.txt"));
 
         int maxLength = compareFilesLength(firstFile, secondFile);

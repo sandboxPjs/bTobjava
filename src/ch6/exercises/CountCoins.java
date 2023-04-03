@@ -6,14 +6,7 @@ import java.util.Scanner;
 
 public class CountCoins {
     public static void main(String[] args) throws FileNotFoundException {
-        // make scanner
-        // read tokens while has next
-        // for each pair
-            // read number
-            // read word
-            // add number to sum (change the number due to word type)
-        // print result
-        Scanner input = new Scanner(new File("resources/test.txt"));
+        Scanner input = new Scanner(new File("resources/test4.txt"));
         countCoins(input);
     }
 

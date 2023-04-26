@@ -1,5 +1,6 @@
 package ch7.projects;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class CircumventIntLimit {
@@ -86,12 +87,12 @@ public class CircumventIntLimit {
             counter--;
         }
         if (nextDigit > 0) { // extend array size
-            int[] tempResult = result;
-            result = new int[Math.max(first.length, second.length) + 1];
-            result[0] = nextDigit;
-            for (int i = 0; i < tempResult.length; i++) {
-                result[i + 1] = tempResult[i];
+            result = Arrays.copyOf(result, result.length + 1);
+            // shift to the right
+            for (int i = result.length - 1; i >= 1; i--) {
+                result[i] = result[i - 1];
             }
+            result[0] = nextDigit;
         }
         return result;
     }

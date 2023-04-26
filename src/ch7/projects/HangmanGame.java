@@ -47,8 +47,8 @@ public class HangmanGame {
 
     public static int countEmptyPositions(char[] array) {
         int counter = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == '\u0000') {
+        for (char i :array) {
+            if (i == '\u0000') {
                 counter++;
             }
         }
@@ -86,11 +86,11 @@ public class HangmanGame {
     }
     public static String printCharArray(char[] letters) {
         String word = "";
-        for (int i = 0; i < letters.length; i++) {
-            if (letters[i] == '\u0000') {
+        for (char i :letters) {
+            if (i == '\u0000') {
                 word += "*";
             } else {
-                word += letters[i];
+                word += i;
             }
         }
         return word;
